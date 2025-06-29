@@ -17,21 +17,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* Applying the custom font */
+        /* Applying the custom font and new background */
         body {
             font-family: 'Nunito', sans-serif;
+            /* URL da imagem de fundo fornecida pelo usuário */
+            background-image: 
+                /* Camada escura para melhorar a legibilidade do texto */
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                /* Imagem de fundo */
+                url('https://i.postimg.cc/kG1gtR3Y/images-4.jpg');
+            
+            /* Garante que a imagem cubra toda a tela */
+            background-size: cover;
+            /* Centraliza a imagem */
+            background-position: center;
+            /* Mantém a imagem fixa ao rolar a página */
+            background-attachment: fixed;
         }
-        /* Adding a subtle sparkle/star background */
-        .sparkle-background {
-            background-color: #1a202c; /* fallback color */
-            background-image:
-                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
-                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
-                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
-                radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
-            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-        }
+
         /* Custom style for Instagram button gradient */
         .instagram-btn {
             background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
@@ -41,23 +44,23 @@
         }
     </style>
 </head>
-<body class="sparkle-background text-white min-h-screen flex items-center justify-center p-4">
+<body class="text-white min-h-screen flex items-center justify-center p-4">
 
     <div class="w-full max-w-md mx-auto text-center">
 
         <!-- Header/Logo -->
         <header class="mb-8">
-            <h1 class="text-4xl md:text-5xl font-black tracking-wider uppercase text-yellow-300">
+            <h1 class="text-4xl md:text-5xl font-black tracking-wider uppercase text-yellow-300" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.7);">
                 Ministério Infantil
             </h1>
-            <p class="text-lg text-yellow-200 font-bold">pequenos Semeadores</p>
-            <p class="text-md text-gray-300 mt-2">Igreja Metodista Central de Cabo Frio</p>
+            <p class="text-lg text-yellow-200 font-bold" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">pequenos Semeadores</p>
+            <p class="text-md text-gray-200 mt-2" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">Igreja Metodista Central de Cabo Frio</p>
         </header>
 
         <!-- Welcome Message -->
         <main>
-            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl mb-8">
-                <h2 class="text-3xl font-bold mb-3 text-cyan-300">Seja Bem-vindo!</h2>
+            <div class="bg-black/40 backdrop-blur-sm p-6 rounded-2xl mb-8 border border-white/20">
+                <h2 class="text-3xl font-bold mb-3 text-cyan-300" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.5);">Seja Bem-vindo!</h2>
                 <p class="text-base leading-relaxed">
                     Olá, amiguinho! Este é um espaço feito para você aprender sobre a Palavra de Deus, louvar, brincar e fazer muitos amigos. Participe das nossas atividades!
                 </p>
@@ -67,7 +70,7 @@
             <div class="flex flex-col space-y-4">
                 
                 <!-- Form Button -->
-                <a href="#" class="group flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-6 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHyERvC2mIEPoEJAyKaFQzAEkUsW_aLgmaHcAelB-3uQZEEw/viewform" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-6 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg">
                     <i class="fas fa-clipboard-list mr-3 transition-transform group-hover:rotate-[-5deg]"></i>
                     Formulário de Inscrição
                 </a>
