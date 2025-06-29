@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministério Infantil - pequenos Semeadores</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts for a friendly look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        /* Applying the custom font */
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+        /* Adding a subtle sparkle/star background */
+        .sparkle-background {
+            background-color: #1a202c; /* fallback color */
+            background-image:
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+                radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        }
+        /* Custom style for Instagram button gradient */
+        .instagram-btn {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .instagram-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="sparkle-background text-white min-h-screen flex items-center justify-center p-4">
+
+    <div class="w-full max-w-md mx-auto text-center">
+
+        <!-- Header/Logo -->
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-5xl font-black tracking-wider uppercase text-yellow-300">
+                Ministério Infantil
+            </h1>
+            <p class="text-lg text-yellow-200 font-bold">pequenos Semeadores</p>
+            <p class="text-md text-gray-300 mt-2">Igreja Metodista Central de Cabo Frio</p>
+        </header>
+
+        <!-- Welcome Message -->
+        <main>
+            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl mb-8">
+                <h2 class="text-3xl font-bold mb-3 text-cyan-300">Seja Bem-vindo!</h2>
+                <p class="text-base leading-relaxed">
+                    Olá, amiguinho! Este é um espaço feito para você aprender sobre a Palavra de Deus, louvar, brincar e fazer muitos amigos. Participe das nossas atividades!
+                </p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col space-y-4">
+                
+                <!-- Form Button -->
+                <a href="#" class="group flex items-center justify-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-6 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-clipboard-list mr-3 transition-transform group-hover:rotate-[-5deg]"></i>
+                    Formulário de Inscrição
+                </a>
+                
+                <!-- WhatsApp Group Button -->
+                <a href="https://chat.whatsapp.com/BimY2b88Whu1FDHkM6PSKu?mode=r_c" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-whatsapp mr-3 transition-transform group-hover:scale-110"></i>
+                    Grupo do WhatsApp
+                </a>
+
+                <!-- Instagram Button -->
+                <a href="https://www.instagram.com/metokidscf/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-center instagram-btn text-white font-bold py-4 px-6 rounded-full text-lg transition-transform transform hover:scale-105 shadow-lg">
+                    <i class="fab fa-instagram mr-3 transition-transform group-hover:animate-pulse"></i>
+                    Siga no Instagram
+                </a>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
+
