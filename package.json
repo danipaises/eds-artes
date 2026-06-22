@@ -1,0 +1,23 @@
+{
+  "name": "quiz_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "firebase": "^12.15.0",
+    "lucide-react": "^1.21.0"
+  },
+  "devDependencies": {
+    "vite": "^8.0.16"
+  }
+}
